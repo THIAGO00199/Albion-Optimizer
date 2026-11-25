@@ -1,34 +1,34 @@
-# Albion Optimizer — Crafting and Potion Profit Calculator
+# Albion Optimizer — Calculadora de craft e lucro de poções
 
-A command-line crafting optimizer for Albion Online potion recipes. It compares crafting options using prices and operating assumptions supplied by the player.
+Otimizador em linha de comando para receitas de poções do Albion Online. Compara opções de fabricação usando preços e premissas informados pelo próprio jogador.
 
-## Features
+## Funcionalidades
 
-- Potion recipes across tiers T2–T8.
-- Material and craft quantity calculations.
-- Resource return rate (RRR) modeling from a supplied production bonus.
-- Station fees, sales tax, setup fees, material costs, revenue, profit, and ROI estimates.
-- Focus-efficiency calculations where recipe data is available.
-- Strategy ranking based on the player's supplied market prices and constraints.
+- Receitas de poções dos tiers T2–T8.
+- Cálculo de quantidades de craft e materiais.
+- Modelagem da taxa de retorno de recursos (RRR) a partir do bônus de produção informado.
+- Custos de estação, impostos de venda, taxas, materiais, receita, lucro e ROI estimado.
+- Cálculo de eficiência de Focus quando os dados da receita estão disponíveis.
+- Ranking de estratégias conforme preços de mercado e restrições informados pelo jogador.
 
-## Run
+## Executar
 
-Requirements: Python 3.10+; the current implementation uses the Python standard library.
+Requisitos: Python 3.10+; a implementação atual usa apenas a biblioteca padrão do Python.
 
 ```bash
 python3 main.py
 ```
 
-The program asks for silver balance, reserve targets, focus/premium assumptions, production bonuses, taxes, material prices, and sale prices. It can compare multiple recipes or calculate a selected potion directly.
+O programa solicita prata disponível, reserva desejada, premissas de Focus/Premium, bônus de produção, impostos, preços de materiais e preços de venda. É possível comparar várias receitas ou calcular uma poção específica.
 
-## Modeling assumptions
+## Premissas e limitações
 
-- Market prices and fees are entered by the user; they are not fetched live.
-- Recipes and craft quantities are local reference data and may need updating after game patches.
-- This version assumes five potions per craft.
-- Resource return is modeled as expected value; exact in-game rounding and some recipe/focus values still require verification.
-- Profit and ROI are estimates, not guarantees of market outcomes.
+- Preços e taxas são informados pelo usuário; não há consulta de mercado em tempo real.
+- Receitas e quantidades são dados locais e podem precisar de atualização após patches do jogo.
+- Esta versão assume cinco poções por craft.
+- O retorno de recursos é tratado como valor esperado; arredondamentos exatos no jogo e alguns valores de receita/Focus ainda precisam de validação.
+- Lucro e ROI são estimativas, não garantias de resultado no mercado.
 
 ---
 
-[Português](./README.pt-BR.md) · [English](./README.md) · [Español](./README.es.md)
+[Português](./README.md) · [English](./README.en.md) · [Español](./README.es.md)
